@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Switchgear | Expert Electrical Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-blue: #0d47a1; --accent-gold: #ffc107; }
+        body { font-family: 'Roboto', sans-serif; }
+        .navbar { background-color: var(--primary-blue); shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar-brand, .nav-link { color: white !important; font-weight: bold; }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1350&q=80');
+            height: 90vh; background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+        }
+        .hero-section h1 { font-family: 'Montserrat', sans-serif; font-size: 4rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        
+        .section-title { margin-bottom: 50px; font-weight: 800; color: var(--primary-blue); position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 4px; background: var(--accent-gold); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+        .service-card { border: none; transition: transform 0.3s; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .service-card:hover { transform: translateY(-10px); }
+        
+        .footer { background: #111; color: #ccc; padding: 50px 0; }
+        .contact-box { background: var(--primary-blue); color: white; padding: 40px; border-radius: 20px; margin-top: -100px; position: relative; z-index: 10; }
+        .btn-custom { background-color: var(--accent-gold); color: #000; font-weight: bold; border-radius: 30px; padding: 10px 30px; border: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="15669.jpg" alt="AB Switchgear Logo" style="height: 50px; width: auto; border-radius: 5px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-1">AB SWITCHGEAR</h1>
+            <p class="lead">Providing Reliable & Safe Electrical Solutions Across Pakistan</p>
+            <a href="#contact" class="btn btn-custom btn-lg mt-4">Consult Our Experts</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container text-center py-5">
+            <h2 class="section-title">Who We Are</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="lead">Hum aik leading electrical engineering firm hain jo LT/HT Panels, VFD automation, aur industrial installations mein specialize karte hain. Hamari expertise aapke system ki safety aur efficiency ko ensure karti hai.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Our Expertise</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4 text-center">
+                        <h3>Panel Fabrication</h3>
+                        <p>Custom design and assembly of high-performance LT and HT panels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4 text-center">
+                        <h3>VFD & PLC</h3>
+                        <p>Advanced programming and installation of ABB, Delta, and Siemens drives.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4 text-center">
+                        <h3>HVAC Services</h3>
+                        <p>Complete maintenance and installation for industrial cooling systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer mt-5">
+        <div class="container">
+            <div class="contact-box shadow">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h5>Call Us</h5>
+                        <p>+92-3244343037</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Email</h5>
+                        <p>info@ab.switchgear00@zohomail.Com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Address</h5>
+                        <p>Lahore, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p>&copy; 2026 AB Switchgear. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<nav class="navbar navbar-expand-lg sticky-top">
+   <img src="15669.jpg" alt="AB Switchgear Logo" style="height: 50px; width: auto; border-radius: 5px;">
